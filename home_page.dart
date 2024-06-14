@@ -4,6 +4,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_application_1/models/recipe.dart';
 import 'package:flutter_application_1/pages/recipe_page.dart';
 import 'package:flutter_application_1/services/data_service.dart';
+import 'package:iconsax/iconsax.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -97,6 +98,19 @@ class _HomePageState extends State<HomePage> {
                 });
               },
               child: const Text("Dinner "),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(
+              horizontal: 5.0,
+            ),
+            child: FilledButton(
+              onPressed: () {
+                setState(() {
+                  _mealTypeFilter = "Favrouite";
+                });
+              },
+              child: const Text("Favrouite "),
             ),
           ),
         ],
