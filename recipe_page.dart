@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_application_1/models/recipe.dart';
+import 'package:iconsax/iconsax.dart';
 
 class RecipePage extends StatelessWidget {
   final Recipe recipe;
@@ -91,6 +92,19 @@ class RecipePage extends StatelessWidget {
               fontWeight: FontWeight.w400,
             ),
           ),
+          Positioned(
+            top: 1,
+            right: 1,
+            child: IconButton(
+              onPressed: () {},
+              style: IconButton.styleFrom(
+                backgroundColor: Colors.white10,
+                fixedSize: const Size(30, 30),
+              ),
+              iconSize: 20,
+              icon: const Icon(Iconsax.heart),
+            ),
+          )
         ],
       ),
     );
